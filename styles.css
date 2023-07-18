@@ -1,9 +1,8 @@
 :root {
   --text: #ecf7fe;
   --background: #000000;
-  --primary: #dc6a1e;
+  --primary: #2500f7;
   --secondary: #021827;
-  --accent: #e27228;
 }
 
 * {
@@ -17,10 +16,16 @@ a {
   color: inherit;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: var(--background);
   color: var(--text);
   display: grid;
+  grid-template-rows: 1fr auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -71,13 +76,13 @@ table {
   margin: 4rem auto 0 auto;
 }
 
-th,
+caption,
 td {
   border: 1px solid var(--secondary);
   padding: 0.5rem 1rem;
 }
 
-th {
+caption {
   background-color: var(--primary);
   color: white;
 }
@@ -100,7 +105,7 @@ tr:nth-child(even) {
 
 .linkedin a {
   display: flex;
-  background-color: blue;
+  background-color: #2500f7;
   padding: 0.1rem 0.4rem;
   border-radius: 0.1rem;
   margin-top: 2px;
