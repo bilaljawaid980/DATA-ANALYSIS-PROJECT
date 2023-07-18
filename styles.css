@@ -1,0 +1,161 @@
+:root {
+  /* --text: #000000;
+  --background: #ffffff;
+  --primary: #401457;
+  --secondary: #c6edb1;
+  --accent: #7c28a9; */
+
+  /* --text: #1b1603;
+  --background: #ffffff;
+  --primary: #0c2069;
+  --secondary: #f7eabb;
+  --accent: #183fcd; */
+
+  --text: #ecf7fe;
+  --background: #000000;
+  --primary: #dc6a1e;
+  --secondary: #021827;
+  --accent: #e27228;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  display: grid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.heading {
+  background-color: var(--primary);
+  padding: 0.4rem 1.5rem;
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+
+h1 {
+  margin: 4rem auto 0 auto;
+  font-size: 2rem;
+}
+
+.info {
+  margin: 4rem auto 0 auto;
+}
+
+.project-view {
+  background-color: var(--secondary);
+  display: flex;
+  place-items: center;
+  width: max-content;
+  padding: 0.4rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0.35rem;
+  font-weight: 500;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 4rem auto 0 auto;
+}
+
+th,
+td {
+  border: 1px solid var(--secondary);
+  padding: 0.5rem 1rem;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: var(--secondary);
+}
+
+.linkedin {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 0.35rem;
+  width: max-content;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.linkedin a {
+  display: flex;
+  background-color: blue;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.1rem;
+  margin-top: 2px;
+  align-items: center;
+  justify-items: center;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: var(--primary);
+  padding: 3rem 1rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contact svg {
+  margin-top: 2px;
+}
+
+@media (min-width: 43.75em) {
+  .project-view {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    margin-top: 5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
